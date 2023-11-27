@@ -1,4 +1,3 @@
-import { parkwindPlugin } from "@park-ui/tailwind-plugin";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
@@ -13,10 +12,4 @@ export default {
       },
     },
   },
-  parkUI: {
-    accentColor: "lime",
-    grayColor: "olive",
-    borderRadius: "xs",
-  },
-  plugins: [parkwindPlugin],
 };
