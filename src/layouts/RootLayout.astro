@@ -21,6 +21,7 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
   </head>
   <body class="flex min-h-screen flex-col overflow-y-scroll">
     <Header title={title} />
+    <slot name="banner" />
     <main class="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8">
       <slot />
     </main>

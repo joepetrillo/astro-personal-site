@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import RootLayout from "../../layouts/RootLayout.astro";
+import Banner from "../../components/Banner.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
@@ -12,6 +13,7 @@ const posts = (await getCollection("blog")).sort(
   title="Blog"
   description="Discover personal updates, life reflections, and software engineering insights on my blog—a straightforward mix of the personal and technical."
 >
+  <Banner text="Blog" slot="banner" />
   <section>
     <ul>
       {

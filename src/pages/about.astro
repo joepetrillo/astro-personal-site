@@ -1,8 +1,10 @@
 ---
+import Banner from "../components/Banner.astro";
 import RootLayout from "../layouts/RootLayout.astro";
 ---
 
-<RootLayout title="About" description="I'm Joe">
+<RootLayout title="About" description="I'm a software engineer.">
+  <Banner text="About" slot="banner" />
   <p>
     All about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae

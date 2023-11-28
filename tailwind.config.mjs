@@ -10,6 +10,9 @@ export default {
         sans: ["Geist", ...defaultTheme.fontFamily.sans],
         mono: ["GeistMono", ...defaultTheme.fontFamily.mono],
       },
+      backgroundImage: {
+        "wavy-pattern": "url('/patterns/wavy-pattern.svg')",
+      },
     },
   },
 };
