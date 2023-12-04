@@ -1,26 +1,22 @@
 ---
 type Props = {
-  title?: string;
-  description?: string;
+  title: string;
+  description: string;
 };
 
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
-const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead
-      title={title === SITE_TITLE ? title : title + " | Joe Petrillo"}
-      description={description}
-    />
+    <BaseHead title={title} description={description} />
   </head>
-  <body class="flex min-h-[100dvh] min-h-screen flex-col overflow-y-scroll">
-    <Header title={title} />
+  <body class="flex min-h-[100dvh] flex-col overflow-y-scroll">
+    <Header />
     <slot name="banner" />
     <main class="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8">
       <slot />

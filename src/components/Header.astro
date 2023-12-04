@@ -1,18 +1,23 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../consts";
+import { ROOT_TITLE } from "../consts";
+const { pathname } = Astro.url;
 ---
 
 <div class="sticky top-0 border-b border-black bg-white shadow-md">
   <header class="mx-auto max-w-3xl px-4 pb-4 pt-4 font-mono sm:px-6 lg:px-8">
     <nav class="flex items-center justify-between gap-6">
-      <h2 class="whitespace-nowrap hover:underline">
-        <a href="/">{SITE_TITLE.toUpperCase()}</a>
+      <h2
+        class:list={[
+          pathname === "/" && "font-bold underline",
+          "whitespace-nowrap hover:underline",
+        ]}
+      >
+        <a href="/">{ROOT_TITLE.toUpperCase()}</a>
       </h2>
       <div class="flex gap-3">
-        <HeaderLink href="/">Home</HeaderLink>
-        <HeaderLink href="/blog">Blog</HeaderLink>
         <HeaderLink href="/about">About</HeaderLink>
+        <HeaderLink href="/blog">Blog</HeaderLink>
       </div>
     </nav>
   </header>

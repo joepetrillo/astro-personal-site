@@ -1,13 +1,8 @@
 ---
 import RootLayout from "../layouts/RootLayout.astro";
+import { ROOT_TITLE, ROOT_DESCRIPTION } from "../consts";
 ---
 
-<RootLayout>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aspernatur,
-    quae neque, aliquid modi tempore eaque dicta debitis provident libero
-    voluptas, quod impedit tempora. Maiores molestias voluptatibus expedita.
-    Impedit sed velit rem minima dolorum quae cum consectetur repellat dicta
-    adipisci! Voluptatem illum voluptas nisi cum necessitatibus. Perferendis
-  </p>
+<RootLayout title={ROOT_TITLE} description={ROOT_DESCRIPTION}>
+  <p>Home page. Picture, brief summary, links, recent posts.</p>
 </RootLayout>

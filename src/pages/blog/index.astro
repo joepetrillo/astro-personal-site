@@ -3,32 +3,45 @@ import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import RootLayout from "../../layouts/RootLayout.astro";
 import Banner from "../../components/Banner.astro";
+import { BLOG_DESCRIPTION, BLOG_TITLE } from "../../consts";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+const postsCollection = await getCollection("blog");
+const posts = await Promise.all(
+  postsCollection
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .map(async (post) => {
+      const { remarkPluginFrontmatter } = await post.render();
+      return {
+        ...post,
+        data: {
+          ...post.data,
+          readingTime: remarkPluginFrontmatter.minutesRead as string,
+        },
+      };
+    }),
 );
 ---
 
-<RootLayout
-  title="Blog"
-  description="Discover personal updates, life reflections, and software engineering insights on my blog—a straightforward mix of the personal and technical."
->
+<RootLayout title={BLOG_TITLE} description={BLOG_DESCRIPTION}>
   <Banner text="Blog" slot="banner" />
-  <section>
-    <ul>
-      {
-        posts.map((post) => (
-          <li>
-            <a href={`/blog/${post.slug}/`}>
-              <img width={720} height={360} src={post.data.heroImage} alt="" />
-              <h4 class="title">{post.data.title}</h4>
-              <p class="date">
-                <FormattedDate date={post.data.pubDate} />
-              </p>
+  <p class="mt-10">{BLOG_DESCRIPTION}</p>
+  <ul class="mb-20 mt-7 space-y-3 divide-y divide-zinc-100">
+    {
+      posts.map((post) => (
+        <li class="pt-3">
+          <h4 class="mb-1 text-xl font-medium">
+            <a href={`/blog/${post.slug}`} class="break-words hover:underline">
+              {post.data.title}
             </a>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
+          </h4>
+          <div class="xs:flex-row flex flex-col justify-between font-mono text-sm text-zinc-500">
+            <span class="self-start bg-zinc-50 p-0.5 text-zinc-500">
+              <FormattedDate date={post.data.pubDate} />
+            </span>
+            <p class="self-start bg-zinc-50 p-0.5">{post.data.readingTime}</p>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
 </RootLayout>

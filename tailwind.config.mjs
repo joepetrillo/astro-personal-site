@@ -13,6 +13,9 @@ export default {
       backgroundImage: {
         "wavy-pattern": "url('/patterns/wavy-pattern.svg')",
       },
+      screens: {
+        xs: "320px",
+      },
     },
   },
 };
