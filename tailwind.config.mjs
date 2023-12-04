@@ -12,6 +12,7 @@ export default {
       },
       backgroundImage: {
         "wavy-pattern": "url('/patterns/wavy-pattern.svg')",
+        "zigzag-pattern": "url('/patterns/zigzag-pattern.svg')",
       },
       screens: {
         xs: "320px",
