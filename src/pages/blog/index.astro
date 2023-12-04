@@ -23,13 +23,13 @@ const posts = await Promise.all(
 ---
 
 <RootLayout title={BLOG_TITLE} description={BLOG_DESCRIPTION}>
-  <Banner text="Blog" slot="banner" />
+  <Banner text="Blog" slot="banner" bg="bg-wavy-pattern" />
   <p class="mt-10">{BLOG_DESCRIPTION}</p>
-  <ul class="mb-20 mt-7 space-y-3 divide-y divide-zinc-100">
+  <ul class="mb-20 mt-6 space-y-4 divide-y divide-zinc-100">
     {
       posts.map((post) => (
-        <li class="pt-3">
-          <h4 class="mb-1 text-xl font-medium">
+        <li class="pt-4">
+          <h4 class="mb-2 text-xl font-medium">
             <a href={`/blog/${post.slug}`} class="break-words hover:underline">
               {post.data.title}
             </a>

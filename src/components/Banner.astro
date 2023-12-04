@@ -1,12 +1,13 @@
 ---
 type Props = {
   text: string;
+  bg?: "bg-wavy-pattern";
 };
 
-const { text } = Astro.props;
+const { text, bg } = Astro.props;
 ---
 
-<div class="border-b border-black">
+<div class:list={["border-b border-black", bg]}>
   <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
     <h1 class="font-mono text-6xl font-bold">{text.toUpperCase()}</h1>
   </div>
