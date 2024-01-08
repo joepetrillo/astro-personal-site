@@ -29,7 +29,7 @@ const posts = await Promise.all(
     {
       posts.map((post) => (
         <li class="pt-4">
-          <h4 class="mb-2 text-xl font-medium">
+          <h4 class="mb-2 text-lg font-medium">
             <a href={`/blog/${post.slug}`} class="break-words hover:underline">
               {post.data.title}
             </a>
