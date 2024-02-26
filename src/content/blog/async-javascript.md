@@ -2,6 +2,7 @@
 title: "A Brief Overview of Asynchronous JavaScript"
 description: "In this post, I explain the basics of asynchronous JavaScript. This guide is meant for absolute beginners but also serves as a good refresher for any developer."
 pubDate: "08-09-2022"
+updatedDate: "01-28-2024"
 ---
 
 Asynchronous code is one of the many tricky parts of JavaScript. In this post, I explain what it is, how to work with it, and briefly how it all works under the hood. This guide is meant for absolute beginners but also serves as a good refresher for any developer. By the end of this article, you will have a high-level overview of everything you need to get started.
@@ -16,7 +17,7 @@ First, you need to understand what asynchronous means; read the following defini
 
 > refers to the occurrence of events independent of the main program flow
 
-Zoom meetings, for example, are **not** asynchronous because they are happening live (everyone is connected simultaneously). However, prerecorded videos you watch on your own accord **are** asynchronous.
+Zoom meetings, for example, are **not** asynchronous because they are happening live (everyone iss connected simultaneously). However, prerecorded videos you watch on your own accord **are** asynchronous.
 
 One example of a prevalent asynchronous task in computer programming is requesting data from a server. The JavaScript equivalent uses the global [fetch](https://developer.mozilla.org/en-US/docs/Web/API/fetch) method. This operation can take considerable time to complete and should not pause (or block) program execution. While waiting for a response, the program should stay busy and use that time to complete other tasks.
 

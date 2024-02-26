@@ -9,21 +9,26 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
 <RootLayout title={title} description={description}>
-  <article>
-    <div class="title">
-      <div class="date">
+  <article class="mb-20 mt-10">
+    <div class="mb-10 border-b border-black pb-4">
+      <h1 class="text-3xl font-extrabold sm:text-4xl md:text-5xl">
+        {title}
+      </h1>
+      <div
+        class="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-zinc-500"
+      >
         <FormattedDate date={pubDate} />
         {
           updatedDate && (
-            <div class="last-updated-on">
-              Last updated on <FormattedDate date={updatedDate} />
-            </div>
+            <p class="italic">
+              Last Updated <FormattedDate date={updatedDate} />
+            </p>
           )
         }
       </div>
-      <h1>{title}</h1>
-      <hr />
     </div>
-    <slot />
+    <div class="prose prose-zinc max-w-3xl">
+      <slot />
+    </div>
   </article>
 </RootLayout>
