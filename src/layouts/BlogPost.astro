@@ -3,9 +3,11 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import RootLayout from "./RootLayout.astro";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"blog">["data"] & {
+  readingTime: string;
+};
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, readingTime } = Astro.props;
 ---
 
 <RootLayout title={title} description={description}>
@@ -26,6 +28,8 @@ const { title, description, pubDate, updatedDate } = Astro.props;
           )
         }
       </div>
+      <p class="mt-1 text-zinc-500">
+        {readingTime}
     </div>
     <div class="prose prose-zinc max-w-3xl">
       <slot />
