@@ -1,7 +1,7 @@
 // home
 export const ROOT_TITLE = "Joe Petrillo";
 export const ROOT_DESCRIPTION =
-  "I'm a software engineer focused on fullstack web development. Think of this site as my informal resume where I also store any thoughts I want to share.";
+  "I'm a full-stack software engineer. This site serves as my informal resume, where I showcase my work and occasionally write blog posts.";
 
 // about
 export const ABOUT_TITLE = `About - ${ROOT_TITLE}`;
