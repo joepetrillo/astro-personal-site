@@ -1,7 +1,7 @@
 ---
 title: "Building AppTrack"
 description: "I built AppTrack with friends to help interns and new grads find job postings. It sends daily emails to those who sign up with direct links to applications."
-pubDate: "08-07-2022"
+publishedDate: "08-07-2022"
 ---
 
 [Live Website](https://apptrack.tech) | [GitHub Repository](https://github.com/jackbisceglia/apptrack)

@@ -1,7 +1,7 @@
 ---
 title: "Building ASCII Helper"
 description: "Ever had to lookup an ASCII value by hand? This simple project makes that process much easier and is filled with DOM fundamentals."
-pubDate: "10-24-2021"
+publishedDate: "10-24-2021"
 ---
 
 [Live Website](https://ascii-helper.netlify.app) | [GitHub Repository](https://github.com/joepetrillo/ascii-helper)

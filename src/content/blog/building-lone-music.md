@@ -1,7 +1,7 @@
 ---
 title: "Building Lone Music"
 description: "I built this semester-long project for my web programming class at UMass. Lone Music is a social media platform mixing elements of Reddit and Soundcloud."
-pubDate: "08-05-2022"
+publishedDate: "08-05-2022"
 ---
 
 [Live Website](https://lonemusic.herokuapp.com) | [GitHub Repository](https://github.com/joepetrillo/cs326-final-bullymaguire)
