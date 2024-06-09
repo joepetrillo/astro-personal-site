@@ -1,10 +1,10 @@
 ---
 title: "Building ASCII Helper"
 description: "Ever had to lookup an ASCII value by hand? This simple project makes that process much easier and is filled with DOM fundamentals."
-publishedDate: "10-24-2021"
+date: "10-24-2021"
 ---
 
-[Live Website](https://ascii-helper.netlify.app) | [GitHub Repository](https://github.com/joepetrillo/ascii-helper)
+[GitHub Repository](https://github.com/joepetrillo/ascii-helper)
 
 ASCII Helper is a simple javascript project I created to quickly find the ASCII value of some given character inputted by the user. Additionally, a table with all the ASCII tables is given. I came up with the idea while learning about ASCII during my _Introduction to Systems_ class (CS230 at UMass Amherst).
 

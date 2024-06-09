@@ -1,10 +1,10 @@
 ---
 title: "Building Lone Music"
 description: "I built this semester-long project for my web programming class at UMass. Lone Music is a social media platform mixing elements of Reddit and Soundcloud."
-publishedDate: "08-05-2022"
+date: "08-05-2022"
 ---
 
-[Live Website](https://lonemusic.herokuapp.com) | [GitHub Repository](https://github.com/joepetrillo/cs326-final-bullymaguire)
+[GitHub Repository](https://github.com/joepetrillo/cs326-final-bullymaguire)
 
 Lone Music is a social media platform I helped build as a semester-long team project in the Introduction to Web Programming class at UMass Amherst. It is envisioned as a new take on music that makes it possible to hear many different versions of vocals over a consistent instrumental (beat). Typically, instrumentals and vocals are combined to create a single finalized sound. We wanted to see if we could make this process more dynamic, fun, and community-driven.
 

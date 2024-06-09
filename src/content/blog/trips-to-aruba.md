@@ -1,7 +1,7 @@
 ---
 title: "My Trips to Aruba"
 description: "I've been on vacation twice to Aruba, and I can easily say it's been my favorite travel destination. This post highlights some of the best things to do."
-publishedDate: "08-12-2022"
+date: "08-12-2022"
 ---
 
 Aruba is a small island off Venezuela's coast in the southern Caribbean that is only 21 miles long. It is a very popular tropical vacation spot known for being safe, adventurous, and relaxing. I went to Aruba with family in 2019 and 2021 and would absolutely recommend it to anyone planning a trip. The beaches, activities, restauraunts, and overall atmosphere makes it hard to beat.

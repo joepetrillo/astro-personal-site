@@ -1,8 +1,7 @@
 ---
 title: "A Brief Overview of Asynchronous JavaScript"
 description: "In this post, I explain the basics of asynchronous JavaScript. This guide is meant for absolute beginners but also serves as a good refresher for any developer."
-publishedDate: "08-09-2022"
-updatedDate: "01-28-2024"
+date: "08-09-2022"
 ---
 
 Asynchronous code is one of the many tricky parts of JavaScript. In this post, I explain what it is, how to work with it, and briefly how it all works under the hood. This guide is meant for absolute beginners but also serves as a good refresher for any developer. By the end of this article, you will have a high-level overview of everything you need to get started.

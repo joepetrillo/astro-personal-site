@@ -1,10 +1,10 @@
 ---
 title: "Building AppTrack"
 description: "I built AppTrack with friends to help interns and new grads find job postings. It sends daily emails to those who sign up with direct links to applications."
-publishedDate: "08-07-2022"
+date: "08-07-2022"
 ---
 
-[Live Website](https://apptrack.tech) | [GitHub Repository](https://github.com/jackbisceglia/apptrack)
+[GitHub Repository](https://github.com/jackbisceglia/apptrack)
 
 AppTrack ensures you'll never miss out on the most prevalent internship and new grad job postings. If you sign up, you will receive daily emails containing the latest updates compiled from popular open-source GitHub repositories. AppTrack uses the PittCSC internship repo, maintained by the Pitt Computer Science Club, and the CoderQuad new grad repo, supported by the community. You'll never receive spam, and you may unsubscribe anytime; just click the link at the bottom of one of our emails.
 

@@ -1,7 +1,7 @@
 ---
 title: "My First Ever Personal Website"
 description: "This was a great way to practice my CSS skills and dive into using a static site generator for the first time."
-publishedDate: "12-30-2021"
+date: "12-30-2021"
 ---
 
 [Live Website](https://old-site--jpetrillo.netlify.app) | [GitHub Repository](https://github.com/joepetrillo/eleventy-personal-site/tree/old-site)

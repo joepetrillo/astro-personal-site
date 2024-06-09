@@ -1,7 +1,7 @@
 ---
 title: "My Typical MacOS Configuration Process"
 description: "I installed a fresh copy of macOS today. This article covers all the software installed, settings changed, and other configurations I do."
-publishedDate: "08-25-2021"
+date: "08-25-2021"
 ---
 
 Today, I installed a fresh copy of macOS Big Sur on my MacBook Pro. Why even bother doing this? In my case, I simply wanted to set up my Mac properly from the very beginning and learn some new things along the way.

@@ -1,7 +1,7 @@
 ---
 title: "Why and How I Taught Myself To Build Computers"
 description: "I taught myself how to build a computer from scratch in 8th grade. How did I do it?"
-publishedDate: "01/01/2022"
+date: "01/01/2022"
 ---
 
 My computer science journey began in 2014 when I decided to build my own computer. I had no idea the difficulty or how much money it would cost compared to a Playstation or Xbox, but I was determined to learn.
