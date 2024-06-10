@@ -6,6 +6,7 @@ import { remarkReadingTime } from "./src/utils/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
+  trailingSlash: "never",
   site: "https://jpetrillo.com",
   integrations: [mdx(), sitemap(), tailwind()],
   prefetch: {

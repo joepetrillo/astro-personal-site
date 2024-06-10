@@ -5,7 +5,15 @@ type Props = {
   image?: string;
 };
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+function removeTrailingSlash(str: string) {
+  return str.replace(/\/+$/, "");
+}
+
+const canonicalURL = removeTrailingSlash(
+  new URL(Astro.url.pathname, Astro.site).toString(),
+);
+
+const astroURL = removeTrailingSlash(Astro.url.toString());
 
 const { title, description, image = "/placeholder.jpg" } = Astro.props;
 
@@ -60,14 +68,14 @@ import { ViewTransitions } from "astro:transitions";
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:url" content={astroURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:url" content={astroURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
