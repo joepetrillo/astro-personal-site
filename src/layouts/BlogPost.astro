@@ -8,7 +8,7 @@ type Props = CollectionEntry<"blog">["data"] & {
   readingTime: string;
 };
 
-const { title, description, date, readingTime } = Astro.props;
+const { title, description, pubDate, readingTime } = Astro.props;
 ---
 
 <RootLayout title={title} description={description}>
@@ -18,7 +18,7 @@ const { title, description, date, readingTime } = Astro.props;
         {title}
       </h1>
       <div class="mt-3 flex flex-wrap items-center gap-x-8 gap-y-4">
-        <MetaInfo icon="date"><FormattedDate date={date} /></MetaInfo>
+        <MetaInfo icon="date"><FormattedDate date={pubDate} /></MetaInfo>
         <MetaInfo icon="time">{readingTime}</MetaInfo>
       </div>
     </div>

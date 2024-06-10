@@ -9,7 +9,7 @@ import MetaInfo from "../../components/MetaInfo.astro";
 const postsCollection = await getCollection("blog");
 const posts = await Promise.all(
   postsCollection
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
     .map(async (post) => {
       const { remarkPluginFrontmatter } = await post.render();
       return {
@@ -37,7 +37,7 @@ const posts = await Promise.all(
           </h4>
           <div class="flex flex-col items-start justify-between gap-y-4 xs:flex-row xs:items-center">
             <MetaInfo icon="date">
-              <FormattedDate date={post.data.date} />
+              <FormattedDate date={post.data.pubDate} />
             </MetaInfo>
             <MetaInfo icon="time">{post.data.readingTime}</MetaInfo>
           </div>
